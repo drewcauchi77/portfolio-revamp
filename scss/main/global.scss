@@ -3,6 +3,12 @@ body{
     height: 100vh;
     background-color: $primary;
     position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6, span, p{
@@ -11,7 +17,7 @@ h1, h2, h3, h4, h5, h6, span, p{
     margin: 0px;
 }
 
-h1 {
+h1{
     font-size: 60px;
     font-family: "Work Sans",sans-serif;
 }
@@ -21,13 +27,13 @@ section{
     min-height: 100vh;
 }
 
-@media only screen and (min-width: $lg-screen) {
+@media only screen and (min-width: $lg-screen){
     main{
         overflow-x: hidden;
         display: flex;
     }
     
-    section {
+    section{
         display: flex;
         justify-content: center;
         align-items: center;

@@ -14,11 +14,14 @@ function debounce (func) {
 function horizontalWheelEvent (container) {
     const scrollContainer = document.querySelector(container)
 
-    scrollContainer.addEventListener('wheel', (event) => {
-        event.preventDefault()
-        // Scroll the container selected by how far the user has scrolled
-        scrollContainer.scrollLeft += event.deltaY;
-    })
+    // Only execute when window is larger than 1060px
+    if(window.innerWidth > 1060) {
+        scrollContainer.addEventListener('wheel', (event) => {
+            event.preventDefault()
+            // Scroll the container selected by how far the user has scrolled
+            scrollContainer.scrollLeft += event.deltaY;
+        })
+    }
 }
 
 // Trigger the function on document ready
