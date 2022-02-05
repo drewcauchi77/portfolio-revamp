@@ -10,3 +10,19 @@ body{
     background-color: $primary;
     position: relative;
 }
+
+@media only screen and (min-width: 1060px) {
+    main{
+        overflow-x: hidden;
+        display: flex;
+    }
+    
+    section {
+        min-width: 50vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4ch;
+    }
+}
