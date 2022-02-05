@@ -1,6 +1,8 @@
 // sass --watch scss/master.scss:style.css --style compressed 
+@import 'main/fonts';
 @import 'main/variables';
 @import 'main/global';
 @import 'main/keyframes';
 
 @import 'partials/lines';
+@import 'partials/titles';

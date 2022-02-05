@@ -1,9 +1,3 @@
-h1, h2, h3, h4, h5, h6, span, p{
-    color: $tertiary;
-    padding: 0px;
-    margin: 0px;
-}
-
 body{
     margin: 0px;
     height: 100vh;
@@ -11,15 +5,29 @@ body{
     position: relative;
 }
 
-@media only screen and (min-width: 1060px) {
+h1, h2, h3, h4, h5, h6, span, p{
+    color: $tertiary;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: "Work Sans",sans-serif;
+}
+
+section{
+    min-width: 50vw;
+    min-height: 100vh;
+}
+
+@media only screen and (min-width: $lg-screen) {
     main{
         overflow-x: hidden;
         display: flex;
     }
     
     section {
-        min-width: 50vw;
-        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;

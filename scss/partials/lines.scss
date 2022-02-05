@@ -49,6 +49,20 @@
                 animation: drop 6.4s 0s infinite;
             }
         }
+        &:nth-child(6){
+            opacity: 0;
+            &::after{
+                animation-delay: 1.9s;
+                animation: drop 8.1s 0s infinite;
+            }
+        }
+        &:nth-child(7){
+            opacity: 0;
+            &::after{
+                animation-delay: 3.4s;
+                animation: drop 6.8s 0s infinite;
+            }
+        }
         &::after{
             content: '';
             display: block;
@@ -64,7 +78,7 @@
     }
 }
 
-@media only screen and (min-width: $min-screen) {
+@media only screen and (min-width: $md-screen){
     .lines{
         .line{
             &:nth-child(1){
@@ -80,6 +94,35 @@
             }
             &:nth-child(5){
                 margin-left: 33.33%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $lg-screen){
+    .lines{
+        .line{
+            &:nth-child(1){
+                margin-left: -25%;
+            }
+            &:nth-child(2){
+                opacity: 1;
+                margin-left: -12.5%;
+            }
+            &:nth-child(4){
+                opacity: 1;
+                margin-left: 12.5%;
+            }
+            &:nth-child(5){
+                margin-left: 25%;
+            }
+            &:nth-child(6){
+                opacity: 1;
+                margin-left: -37.5%;
+            }
+            &:nth-child(7){
+                opacity: 1;
+                margin-left: 37.5%;
             }
         }
     }
