@@ -15,11 +15,17 @@ h1, h2, h3, h4, h5, h6, span, p{
     color: $tertiary;
     padding: 0px;
     margin: 0px;
+    font-family: "Work Sans",sans-serif;
 }
 
 h1{
     font-size: 60px;
-    font-family: "Work Sans",sans-serif;
+}
+
+a {
+    display: block;
+    height: 100%;
+    -webkit-tap-highlight-color: $secondary-transparent;
 }
 
 section{
@@ -27,7 +33,7 @@ section{
     min-height: 100vh;
 }
 
-@media only screen and (min-width: $lg-screen){
+@media only screen and (min-width: $xlg-screen){
     main{
         overflow-x: hidden;
         display: flex;

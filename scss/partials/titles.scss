@@ -2,10 +2,10 @@
     transform: rotate(270deg);
     position: fixed;
     transform-origin: bottom;
-    z-index: 10;
-    left: 10%;
+    z-index: 999;
     letter-spacing: -1.9px;
     color: $secondary;
+    top: 10%;
 }
 
 @media only screen and (min-width: $sm-screen){
@@ -17,13 +17,14 @@
 @media only screen and (min-width: $md-screen){
     .main-title{
         font-size: 110px;
+        left: 5%;
     }
 }
 
-@media only screen and (min-width: $lg-screen){
+@media only screen and (min-width: $xlg-screen){
     .main-title{
         font-size: 160px;
         line-height: 160px;
-        top: 5%;
+        top: 20%;
     }
 }
