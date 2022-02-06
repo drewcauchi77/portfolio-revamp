@@ -19,48 +19,48 @@
             margin-left: -25%;
             &::after{
                 animation-delay: 2.9s;
-                animation: drop 7.1s 0s infinite;
+                animation: dropping 7.1s 0s infinite;
             }
         }
         &:nth-child(2){
             opacity: 0;
             &::after{
                 animation-delay: 4.2s;
-                animation: drop 5.2s 0s infinite;
+                animation: dropping 5.2s 0s infinite;
             }
         }
         &:nth-child(3){
             &::after{
                 animation-delay: 5.3s;
-                animation: drop 8.9s 0s infinite;
+                animation: dropping 8.9s 0s infinite;
             }
         }
         &:nth-child(4){
             opacity: 0;
             &::after{
                 animation-delay: 2.3s;
-                animation: drop 6.6s 0s infinite;
+                animation: dropping 6.6s 0s infinite;
             }
         }
         &:nth-child(5){
             margin-left: 25%;
             &::after{
                 animation-delay: 3.2s;
-                animation: drop 6.4s 0s infinite;
+                animation: dropping 6.4s 0s infinite;
             }
         }
         &:nth-child(6){
             opacity: 0;
             &::after{
                 animation-delay: 1.9s;
-                animation: drop 8.1s 0s infinite;
+                animation: dropping 8.1s 0s infinite;
             }
         }
         &:nth-child(7){
             opacity: 0;
             &::after{
                 animation-delay: 3.4s;
-                animation: drop 6.8s 0s infinite;
+                animation: dropping 6.8s 0s infinite;
             }
         }
         &::after{
