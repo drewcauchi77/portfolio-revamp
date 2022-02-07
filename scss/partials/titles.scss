@@ -1,30 +1,92 @@
-.main-title{
+.title-container{
     transform: rotate(270deg);
     position: fixed;
     transform-origin: bottom;
     z-index: 999;
-    letter-spacing: -1.9px;
-    color: $secondary;
-    top: 10%;
+    top: 12%;
+    left: 0;
+    overflow: hidden;
+    line-height: 60px;
+    height: 56px;
+    width: 175px;
+    .mask{
+        height: 100%;
+        transition: transform 0.4s ease;
+        .main-title{
+            letter-spacing: -1.9px;
+            color: $secondary;
+            transition: transform 0.4s ease;
+        }
+        .main-title-1 {
+            transform-origin: right center;
+        }
+        .main-title-2 {
+            transform-origin: left center;
+            transform: rotate(10deg);
+            color: $attention;
+            font-style: italic;
+        }
+    }
+    &:hover{
+        .mask{
+            transform: translateY(-60px);
+        }
+        .main-title-1{
+            transform: rotate(10deg);
+        }
+        .main-title-2{
+            transform: rotate(0);
+        }
+    }
 }
 
 @media only screen and (min-width: $sm-screen){
-    .main-title{
-        font-size: 90px;
+    .title-container{
+        height: 85px;
+        line-height: 89px;
+        width: 260px;
+        .main-title{
+            font-size: 90px;
+        }
+        &:hover{
+            .mask{
+                transform: translateY(-90px);
+            }
+        }
     }
 }
 
 @media only screen and (min-width: $md-screen){
-    .main-title{
-        font-size: 110px;
-        left: 5%;
+    .title-container{
+        height: 107px;
+        line-height: 111px;
+        width: 324px;
+        .main-title{
+            font-size: 110px;
+        }
+        &:hover{
+            .mask{
+                transform: translateY(-110px);
+            }
+        }
     }
 }
 
 @media only screen and (min-width: $xlg-screen){
-    .main-title{
-        font-size: 160px;
-        line-height: 160px;
+    .title-container{
+        left: 5%;
         top: 20%;
+        height: 176px;
+        line-height: 180px;
+        width: 478px;
+        .main-title{
+            font-size: 160px;
+            line-height: 160px;
+        }
+        &:hover{
+            .mask{
+                transform: translateY(-160px);
+            }
+        }
     }
 }
