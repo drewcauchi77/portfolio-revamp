@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6, span, p, svg{
     padding: 0px;
     margin: 0px;
     font-family: "Work Sans",sans-serif;
+    letter-spacing: 1.1px;
 }
 
 h1{
@@ -37,6 +38,7 @@ section{
     main{
         overflow-x: hidden;
         display: flex;
+        width: 15000px;
     }
     
     section{

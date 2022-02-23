@@ -11,22 +11,51 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
-            filter: invert(25%);
+        }
+        .overlay{
+            background: linear-gradient(to top,rgba(0,0,0,.7) 0,rgba(0,0,0,.3) 100%);
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
         }
         .single-work-details{
             position: absolute;
-            bottom: 20px;
-            left: 20px;
-            .single-work-title{
-                font-size: 30px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            .number{
+                position: absolute;
+                top: 20px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                font-size: 22px;
+                width: fit-content;
+                margin: auto;
             }
-            .single-work-subtitle{
-                font-size: 14px;
-            }
-            .single-work-visit{
-                font-size: 18px;
-                display: block;
-                padding-top: 20px;
+            .name{
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                .single-work-title{
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+                .single-work-subtitle{
+                    font-size: 16px;
+                    display: block;
+                    padding-top: 20px;
+                    line-height: 25px;
+                }
+                .sco-text{
+                    font-size: 10px;
+                    font-style: italic;
+                }
             }
         }
     }
@@ -41,9 +70,6 @@
             .single-work-details{
                 .single-work-title{
                     font-size: 50px;
-                }
-                .single-work-subtitle{
-                    font-size: 18px;
                 }
             }
         }
@@ -72,5 +98,11 @@
             height: 500px;
             width: 600px;
         }
+    }
+}
+
+@media only screen and (min-width: $xlg-screen){
+    .selected-works{
+        padding: 0;
     }
 }
