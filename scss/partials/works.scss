@@ -96,13 +96,30 @@
         padding-top: 30%;
         .single-work{
             height: 500px;
-            width: 600px;
+            width: 550px;
         }
     }
 }
 
 @media only screen and (min-width: $xlg-screen){
-    .selected-works{
-        padding: 0;
+    .horizontal-scroller{
+        padding-top: 15%;
+        .selected-works{
+            padding: 0;
+            width: 5300px;
+            justify-content: space-between;
+            .single-work{
+                align-self: center;
+                margin: 0px;
+                height: 70vh;
+                max-height: 650px;
+                &:nth-child(odd){
+                    margin-bottom: 75px;
+                }
+                &:nth-child(even){
+                    margin-top: 75px;
+                }
+            }
+        }
     }
 }
