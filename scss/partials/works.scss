@@ -82,10 +82,10 @@
             height: 600px;
             width: 550px;
             &:nth-child(odd){
-                float: left;
+                float: right;
             }
             &:nth-child(even){
-                float: right;
+                float: left;
             }
         }
     }
@@ -106,13 +106,39 @@
         padding-top: 15%;
         .selected-works{
             padding: 0;
-            width: 5300px;
+            width: 4900px;
             justify-content: space-between;
             .single-work{
                 align-self: center;
                 margin: 0px;
                 height: 70vh;
                 max-height: 650px;
+                a{
+                    .overlay{
+                        opacity: 0;
+                        transition: 0.7s all;
+                    }
+                    .single-work-details{
+                        opacity: 0;
+                        transition: 0.7s all;
+                        .number{
+                            font-size: 32px;
+                        }
+                        .name{
+                            .single-work-title{
+                                font-size: 48px;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .overlay{
+                            opacity: 1; 
+                        }
+                        .single-work-details{
+                            opacity: 1;
+                        }
+                    }
+                }
                 &:nth-child(odd){
                     margin-bottom: 75px;
                 }
