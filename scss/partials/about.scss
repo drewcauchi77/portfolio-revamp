@@ -1,0 +1,102 @@
+.about-sect{
+    font-size: 22px;
+    padding: 0 5%;
+    z-index: 899;
+    .about-details{
+        padding-left: 30%;
+        > div{
+            padding-bottom: 50px;
+            a{
+                display: inline-block;
+                color: $tertiary;
+                text-decoration: none;
+                background-image: linear-gradient(90deg, $primary, $primary), linear-gradient(90deg, $secondary, $secondary);
+                background-size: 20px 2px, 100% 2px;
+                background-repeat: no-repeat;
+                background-position-x: calc(20px * -1), 0;
+                background-position-y: 100%;
+                transition: background-position-x 0.5s;
+                &:hover{
+                    background-image: linear-gradient(90deg, $primary, $primary), linear-gradient(90deg, $attention, $attention);
+                    background-position-x: calc(100% + 20px), 0;
+                }
+            }
+        }
+    }
+    .about-image{
+        max-width: 550px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: $sm-screen){
+    .about-sect{
+        font-size: 35px;
+        .about-details{
+            > div{
+                a{
+                    background-size: 20px 4px, 100% 4px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $md-screen){
+    .about-sect{
+        position: relative;
+        font-size: 46px;
+        .about-details{
+            z-index: 900;
+            padding-left: 40%;
+            position: relative;
+            padding-top: 100px;
+        }
+        .about-image{
+            position: absolute;
+            top: 0;
+            left: -5%;
+        }
+    }
+}
+
+@media only screen and (min-width: $lg-screen){
+    .about-sect{
+        .about-image{
+            left: unset;
+        }
+    }
+}
+
+@media only screen and (min-width: $xlg-screen){
+    .about-sect{
+        padding: 0 150px 0 0;
+        width: 1500px;
+        display: flex;
+        font-size: 60px;
+        .about-details{
+            order: 1;
+            padding: 0;
+            margin-left: -100px;
+            align-self: end;
+            padding-bottom: 50px;
+            > div{
+                a{
+                    background-size: 20px 6px, 100% 6px;
+                }
+            }
+        }
+        .about-image{
+            position: relative;
+            height: 90vh;
+            align-self: center;
+            img{
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}
