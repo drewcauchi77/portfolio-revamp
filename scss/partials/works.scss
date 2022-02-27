@@ -113,7 +113,8 @@
                 margin: 0px;
                 height: 70vh;
                 max-height: 650px;
-                a{
+                .single-work-link{
+                    position: relative;
                     .overlay{
                         opacity: 0;
                         transition: 0.7s all;
@@ -130,7 +131,7 @@
                             }
                         }
                     }
-                    &:hover{
+                    &.hover-effect{
                         .overlay{
                             opacity: 1; 
                         }
