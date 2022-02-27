@@ -1,4 +1,4 @@
-.selected-works{
+.works-sect{
     padding: 70% 5% 0 5%;
     z-index: 899;
     position: relative;
@@ -62,7 +62,7 @@
 }
 
 @media only screen and (min-width: $sm-screen){
-    .selected-works{
+    .works-sect{
         padding: 50% 5% 0 5%;
         .single-work{
             height: 550px;
@@ -77,7 +77,7 @@
 }
 
 @media only screen and (min-width: $md-screen){
-    .selected-works{
+    .works-sect{
         .single-work{
             height: 600px;
             width: 550px;
@@ -92,7 +92,7 @@
 }
 
 @media only screen and (min-width: $lg-screen){
-    .selected-works{
+    .works-sect{
         padding-top: 30%;
         .single-work{
             height: 500px;
@@ -102,50 +102,50 @@
 }
 
 @media only screen and (min-width: $xlg-screen){
-    .horizontal-scroller{
-        padding-top: 15%;
-        .selected-works{
-            padding: 0;
-            width: 4900px;
-            justify-content: space-between;
-            .single-work{
-                align-self: center;
-                margin: 0px;
-                height: 70vh;
-                max-height: 650px;
-                .single-work-link{
-                    position: relative;
+    .works-sect{
+        display: flex;
+        padding: 0;
+        width: 4900px;
+        justify-content: space-between;
+        padding-right: 400px;
+        .single-work{
+            align-self: center;
+            margin: 0px;
+            height: 70vh;
+            max-height: 650px;
+            padding: 0 100px;
+            .single-work-link{
+                position: relative;
+                .overlay{
+                    opacity: 0;
+                    transition: 0.7s all;
+                }
+                .single-work-details{
+                    opacity: 0;
+                    transition: 0.7s all;
+                    .number{
+                        font-size: 32px;
+                    }
+                    .name{
+                        .single-work-title{
+                            font-size: 48px;
+                        }
+                    }
+                }
+                &.hover-effect{
                     .overlay{
-                        opacity: 0;
-                        transition: 0.7s all;
+                        opacity: 1; 
                     }
                     .single-work-details{
-                        opacity: 0;
-                        transition: 0.7s all;
-                        .number{
-                            font-size: 32px;
-                        }
-                        .name{
-                            .single-work-title{
-                                font-size: 48px;
-                            }
-                        }
-                    }
-                    &.hover-effect{
-                        .overlay{
-                            opacity: 1; 
-                        }
-                        .single-work-details{
-                            opacity: 1;
-                        }
+                        opacity: 1;
                     }
                 }
-                &:nth-child(odd){
-                    margin-bottom: 75px;
-                }
-                &:nth-child(even){
-                    margin-top: 75px;
-                }
+            }
+            &:nth-child(odd){
+                margin-bottom: 75px;
+            }
+            &:nth-child(even){
+                margin-top: 75px;
             }
         }
     }
