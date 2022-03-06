@@ -26,10 +26,6 @@ $('.single-work-link').on('mousemove', function(e) {
     $('.desktop-mouse-hover', this).css('left', `${clientX - left}px`)
 })
 
-$(window).resize(function(){
-    location.reload();
-});
-
 if($(window).width() < 1060) {
     $(window).scroll(function() {
         var halfWindowHeight = $(window).height() / 2
