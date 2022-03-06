@@ -1,3 +1,4 @@
+// Each section should have a set size and the parent horizontal content container should have a size including all other sizes
 // sass --watch scss/master.scss:style.css --style compressed 
 @import 'main/fonts';
 @import 'main/variables';
@@ -10,5 +11,7 @@
 @import 'partials/titles';
 @import 'partials/works';
 @import 'partials/about';
+@import 'partials/contact';
 @import 'partials/quote';
 @import 'partials/mouse-hover';
+@import 'partials/custom-link';

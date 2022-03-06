@@ -1,0 +1,113 @@
+.contact-sect{
+    padding: 0 5%;
+    z-index: 899;
+    margin: 100px 0px;
+    .contact-details{
+        padding-bottom: 60px;
+        .contact-title{
+            text-align: right;
+            margin-bottom: 40px;
+            span{
+                font-size: 58px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+        .email-title{
+            width: fit-content;
+            font-size: 24px;
+            border-radius: 50px;
+            margin: 0 auto;
+            a{
+                padding: 18px 25px;
+                border-radius: 50px;
+                text-decoration: none;
+                border: 3px solid $secondary;
+                background: linear-gradient(to left, transparent 50%, $secondary 50%) right;
+                background-size: 200% 100%;
+                transition: all 0.3s ease;
+                span{
+                    color: $tertiary;
+                }
+                &:hover {
+                    background-position: left;
+                }  
+            }
+        }
+    }
+    .networks{
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        display: flex;
+        max-width: 300px;
+        justify-content: space-between;
+        margin: 30px auto;
+    }
+}
+
+
+@media only screen and (min-width: $sm-screen){
+    .contact-sect{
+        .contact-details{
+            .contact-title{
+                span{
+                    font-size: 70px;
+                }
+            }
+        }
+        .networks{
+            max-width: 450px;
+            font-size: 35px;
+        }
+    }
+}
+
+@media only screen and (min-width: $md-screen){
+    .contact-sect{
+        .contact-details{
+            .contact-title{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $lg-screen){
+    .contact-sect{
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (min-width: $xlg-screen){
+    .contact-sect{
+        padding: 0 150px 0 0;
+        width: 1500px;
+        margin: 100px 0px;
+        display: flex;
+        .contact-div{
+            align-self: center;
+            .contact-details{
+                .contact-title{
+                    text-align: left;
+                    span{
+                        font-size: 150px;
+                    }
+                }
+                .email-title{
+                    margin-left: 0;
+                    span{
+                        font-size: 34px;
+                    }
+                }
+            }
+            .networks{
+                margin-left: 0;
+                a{
+                    font-size: 44px;
+                    line-height: 52px;
+                }
+            }
+        }
+    }
+}
