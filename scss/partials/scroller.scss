@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+    display:none;
+}
+
+.horizontal-content{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: $xlg-screen){
+    .horizontal-scroller{
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding-top: 15%;
+    }
+
+    .horizontal-content{
+        display: flex;
+        flex-direction: row;
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+        height: 100vh;
+        width: 8600px;
+    }
+}

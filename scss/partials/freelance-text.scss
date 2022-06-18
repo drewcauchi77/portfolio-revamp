@@ -1,0 +1,31 @@
+.freelance-text{
+    position: fixed;
+    right: 10%;
+    top: 5%;
+    animation: rotating 9s linear infinite;
+    opacity: 60%;
+    svg {
+        fill: $tertiary;
+        height: auto;
+        transform-origin: center;
+        width: 200px;
+        height: 200px;
+        text{
+            font-size: 9.4px;
+            letter-spacing: 0px;
+            tspan{
+                fill: $attention;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $md-screen){
+    .freelance-text{
+        svg {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}

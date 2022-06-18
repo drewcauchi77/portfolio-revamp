@@ -1,0 +1,61 @@
+.title-container{
+    transform: rotate(270deg);
+    position: fixed;
+    transform-origin: bottom;
+    z-index: 999;
+    top: 12%;
+    left: 0;
+    overflow: hidden;
+    line-height: 60px;
+    height: 56px;
+    width: 178px;
+    .main-title{
+        transition: all 0.3s ease;
+        background: linear-gradient(to right, $attention, $attention 50%, $secondary 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        &:hover{
+            background-position: 0 100%;
+            transform: skewX(-10deg);
+        }
+    }
+}
+
+@media only screen and (min-width: $sm-screen){
+    .title-container{
+        height: 85px;
+        line-height: 89px;
+        width: 266px;
+        .main-title{
+            font-size: 90px;
+        }
+    }
+}
+
+@media only screen and (min-width: $md-screen){
+    .title-container{
+        height: 107px;
+        line-height: 111px;
+        width: 324px;
+        .main-title{
+            font-size: 110px;
+        }
+    }
+}
+
+@media only screen and (min-width: $xlg-screen){
+    .title-container{
+        left: 5%;
+        top: 20%;
+        height: 176px;
+        line-height: 180px;
+        width: 478px;
+        .main-title{
+            font-size: 160px;
+            line-height: 160px;
+        }
+    }
+}
