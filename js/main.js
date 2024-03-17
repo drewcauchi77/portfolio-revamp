@@ -46,11 +46,11 @@ if($(window).width() < 1060) {
     $('.horizontal-scroller').scroll(function() {
         var scrollDistance = $('.horizontal-scroller').scrollTop()
 
-        if(scrollDistance >= 0 && scrollDistance < 4600) {
+        if(scrollDistance >= 0 && scrollDistance < 7400) {
             $('.main-title').text('works')
-        } else if(scrollDistance >= 4600 && scrollDistance < 6300) {
+        } else if(scrollDistance >= 7400 && scrollDistance < 9100) {
             $('.main-title').text('about')
-        } else if(scrollDistance >= 6300) {
+        } else if(scrollDistance >= 9100) {
             $('.main-title').text('reach')
         }
     })
